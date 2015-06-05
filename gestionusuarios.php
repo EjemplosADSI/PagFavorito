@@ -1,6 +1,11 @@
 <?php
 
 session_start();
+
+$codigo = $_SESSION['Permisos'];
+
+if ($codigo == 1) {
+	
 echo "Bienvenido";
 echo "Tu usuario es:".$_SESSION['usuario']."<br/> Tu contraseña es:".$_SESSION['contrasena']."<br/>";
 
@@ -48,5 +53,7 @@ echo "</table>";
 //cerrar conexion
 mysql_close($conexion);
 
-
+}else{
+	echo "Error. No tiene permisos de Administrador";
+}
 ?>

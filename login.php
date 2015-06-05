@@ -16,10 +16,12 @@ $resultado = mysql_query("SELECT * FROM usuario;");
 while ($fila = mysql_fetch_array($resultado)) {
 	$usuariobasedatos = $fila['Usuario'];
 	$contrasenabasedatos = $fila['Contrasena'];	
+	$permisosenbase = $fila['Permisos'];	
 
 	if ($usuario == $usuariobasedatos & $contrasena == $contrasenabasedatos) {
 		$_SESSION['usuario'] = $usuario;
 		$_SESSION['contrasena'] = $contrasena ;
+		$_SESSION['Permisos'] = $permisosenbase;
 
 		echo "
 			<html>
