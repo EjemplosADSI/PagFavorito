@@ -1,5 +1,6 @@
 <?php
 
+include("log.php");
 session_start();
 
 $usuario = $_SESSION['usuario'];

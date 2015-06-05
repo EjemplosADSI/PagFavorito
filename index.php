@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-// $_SESSION['usuario'] = "Fredy";
-// $_SESSION['contrasena'] = "12345";
-
 echo "
 <html>
 <head>

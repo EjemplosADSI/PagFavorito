@@ -9,6 +9,14 @@ if ($codigo == 1) {
 echo "Bienvenido";
 echo "Tu usuario es:".$_SESSION['usuario']."<br/> Tu contraseña es:".$_SESSION['contrasena']."<br/>";
 
+//crear resumen de visitas
+$conexion = mysql_connect("localhost","fredy","fredy");
+mysql_select_db("pagfavoritos",$conexion);
+$consulta = "SELECT * FROM logs";
+
+$hora0 = 0; 
+
+mysql_close($conexion);
 //crear conexion
 $conexion = mysql_connect("localhost","fredy","fredy");
 mysql_select_db("pagfavoritos",$conexion);
