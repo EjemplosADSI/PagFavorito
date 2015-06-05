@@ -25,15 +25,33 @@ echo "<table border='1'>
 	<td>Categoria</td>
 	<td>Comentario</td>
 	<td>Valoracion</td>
+	<td></td>
 	</tr>
 ";
 
 while ($fila = mysql_fetch_array($resultado)) {
-	echo "<tr>
-	<td><input type='text' name='titulo' value='".$fila['titulo']."'</td>
-
-
+	echo "<tr><form action='procesoactualizarfavorito.php' method='post'>
+	<td><input type='text' name='titulo' value='".$fila['Titulo']."'></td>
+	<td><input type='text' name='direccion' value='".$fila['Direccion']."'</td>
+	<td><select name='categoria'>
+	<option value='salud'>Salud</option>
+	<option value='trabajo'>Trabajo</option>
+	<option value='hobby'>Hobby</option>
+	<option value='personal'>Personal</option>
+	<option value='salud'>Salud</option>
+	<option value='tecnologia'>Tecnologia</option>
+	<option value='".$fila['Categoria']."' Selected>".$fila['Categoria']."</option>
+	</select></td>
+	<td><input type='text' name='comentario' value='".$fila['Comentario']."'</td>
+	<td><input type='text' name='valoracion' value='".$fila['Valoracion']."'</td>
+	<td><input type='submit'></td>
+	</form>
 	</tr>";
 }
+echo "</table>";
+
+$_SESSION['Titulo'] = $titulo;
+
+mysql_close($conexion);
 
 ?>
