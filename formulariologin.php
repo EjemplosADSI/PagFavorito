@@ -15,6 +15,7 @@
 	<tr><td>
 	<input type="submit"></tr></td>
 </table>
+<a href="formularioaltausuario.php">Registrar Usuario</a>
 </form>
 </body>
 </html>

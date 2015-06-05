@@ -8,7 +8,7 @@ echo "Tu usuario es:".$_SESSION['usuario']."<br/> Tu contraseña es:".$_SESSION[
 $conexion = mysql_connect("localhost","fredy","fredy");
 mysql_select_db("pagfavoritos",$conexion);
 //establecer consulta
-$consulta = "SELECT * FROM favorito WHERE usuario='fredy' AND contrasena='12345';";
+$consulta = "SELECT * FROM favorito WHERE usuario='".$_SESSION['usuario']."' AND contrasena='".$_SESSION['contrasena']."';";
 //ejecutar consulta
 $resultado = mysql_query($consulta);
 //imprimir consulta 
