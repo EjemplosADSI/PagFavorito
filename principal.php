@@ -12,6 +12,7 @@ $consulta = "SELECT * FROM favorito WHERE usuario='fredy' AND contrasena='12345'
 //ejecutar consulta
 $resultado = mysql_query($consulta);
 //imprimir consulta 
+
 echo "<table border=1>
 		<tr>
 		<td>Titulo</td>
@@ -42,8 +43,7 @@ echo "
 	<option value='personal'>Personal</option>
 	<option value='salud'>Salud</option>
 	<option value='tecnologia'>Tecnologia</option>
-	>
-	</td>
+	</select></td>
 	<td><input type='text' name='comentario'></td>
 	<td><input type='text' name='valoracion'></td>
 	<td><input type='submit'></td>
