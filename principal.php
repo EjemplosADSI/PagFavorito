@@ -6,6 +6,10 @@ $usuario = $_SESSION['usuario'];
 $contrasena = $_SESSION['contrasena'];
 
 echo "Bienvenido"."<br/>"."Usuario:".$usuario;
+
+echo "<br/>pulsa <a href='cerrarsesion.php'>AQUI</a>para cerrar session";
+
+
 //crear conexion
 $conexion = mysql_connect("localhost","fredy","fredy");
 mysql_select_db("pagfavoritos",$conexion);
