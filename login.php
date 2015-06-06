@@ -31,7 +31,7 @@ while ($fila = mysql_fetch_array($resultado)) {
 			</html>
 		";
 	}else{
-	echo "error";
+	
 
 	}
 }

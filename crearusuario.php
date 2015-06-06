@@ -41,7 +41,7 @@ mysql_close($conexion);
 echo "
 <html>
 <head>
-<meta http-equiv='refresh' content='0; url=gestionusuarios.php'/>
+<meta http-equiv='refresh' content='0; url=principal.php'/>
 </head>
 </html>
 ";

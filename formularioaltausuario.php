@@ -4,14 +4,6 @@
 	<title></title>
 </head>
 <body>
-<!-- <form action="crusuario.php" method="post">
-	<input type="text" name="usuario" placeholder="usuario"><br/>
-	<input type="password" name="contrasena" placeholder="contraseña"><br/>
-	<input type="text" name="nombre" placeholder="nombre"></form>
-	<input type="text" name="apellido" placeholder="apellido"><br/>
-	<input type="text" name="edad" placeholder="edad"><br/>
-	<input type="submit">
-</form> -->
 <form action="crearusuario.php" method="post">
 	<input type="text" name="usuario" placeholder="usuario"><br/>
 	<input type="password" name="contrasena" placeholder="contraseña"><br/>
